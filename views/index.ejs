@@ -1,0 +1,36 @@
+<!-- include header -->
+  <%- include('include/_header')%>
+<!-- /include header -->
+
+<!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+      <!-- filter form -->
+      <%- include('include/_form') %>
+      <!-- /filter form -->
+
+      <!-- loading animation -->
+      <%- include('include/_spinner') %>
+      <!-- /loading animation -->
+      
+      <!-- portfolios -->
+      <table class="table" id="portfolio_table" style="display: none;">
+        <thead class="thead-dark">
+          <tr>
+            <th>No</th>
+            <th>Token</th>
+            <th>Amount</th>
+            <th>USD</th>
+          </tr>
+        </thead>
+        <tbody id="portfolio_table_body">
+        </tbody>
+      </table>
+      <!-- portfolios -->
+    </div>
+  </main>
+<!-- /Main Site --> 
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- /include footer -->
